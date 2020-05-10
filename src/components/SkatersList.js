@@ -4,7 +4,8 @@ import axios from 'axios'
 export default class SkatesList extends React.Component {
 
 	componentDidMount() {
-		axios.get('https://sk8-api.herokuapp.com/api/v1/skaters')
+		axios.get('https://localhose:3000/api/v1/skaters')
+			// axios.get('https://sk8-api.herokuapp.com/api/v1/skaters')
 			.then(data => console.log(data))
 	}
 
