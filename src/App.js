@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css'
-import { SkatersList } from './components'
+import SkatersContainer from './containers/SkatersContainer'
 
 function App() {
   return (
     <>
-      <SkatersList />
+      <SkatersContainer />
     </>
   )
 }
