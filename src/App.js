@@ -1,12 +1,15 @@
 import React from 'react'
 import './App.css'
-import SkatersContainer from './containers/SkatersContainer'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './components/Home'
 
 function App() {
   return (
-    <>
-      <SkatersContainer />
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
   )
 }
 

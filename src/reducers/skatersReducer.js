@@ -12,7 +12,7 @@ export const skatersReducer = (state = {
 		case 'ADD_SKATERS':
 			return {
 				...state,
-				skaters: action.skaters.data,
+				skaters: [...action.skaters.data],
 				loading: false
 			}
 		default:

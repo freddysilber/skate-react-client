@@ -5,7 +5,7 @@ export const fetchSkaters = () => {
 	return dispatch => {
 		dispatch({ type: 'LOADING' })
 		axios.get(api.skaters)
-			.then(data => dispatch({ type: 'ADD_SKATERS', skaters: data }))
+			.then(data => dispatch({ type: 'ADD_SKATERS', skaters: data.data }))
 			.catch(error => console.error('error', error))
 	}
 }

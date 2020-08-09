@@ -14,12 +14,9 @@ class SkatersContainer extends React.Component {
 	}
 
 	handleLoading = () => {
-		console.log(this.props.loading)
 		if (this.props.loading) {
-			// console.log(this.props.loading)
 			return <h1>LOADING</h1>
 		} else {
-			// console.log(this.props.loading)
 			return <SkatersList skaters={this.props.skaters} />
 		}
 	}
